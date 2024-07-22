@@ -1,4 +1,10 @@
-pandasai==2.0.37
-streamlit
+pandasai==2.0 #https://pypi.org/project/pandasai/2.0/
+langchain-groq==0.0.1 #https://pypi.org/project/langchain/0.1.9/
+pandas
+
+#streamlit
+
+#conda create -n genaii python=3.10
 
 #pip install -r requirements.txt #all at once
+#https://www.youtube.com/watch?v=C6R9JLHZDH0
