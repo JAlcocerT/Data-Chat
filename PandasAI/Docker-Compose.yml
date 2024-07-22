@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  testing_service:
+    image: pandasai_openai
+    container_name: pandasai_openai
+    ports:
+      - "8010:8000"
+    #command: streamlit run app.py
+    command: tail -f /dev/null
+    environment:
+      - OPENAI_API_KEY=sk-proj-yourapi
+
+#docker exec -it pandasai_openai /bin/bash
+#podman exec -it pandasai_openai /bin/bash
+
+# docker build -t pandasai_openai .
+# podman build -t pandasai_openai .

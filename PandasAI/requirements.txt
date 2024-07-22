@@ -1,0 +1,6 @@
+pandas
+pandasai==2.2.12
+streamlit
+
+
+#pip install -r requirements.txt #all at once
