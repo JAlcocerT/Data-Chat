@@ -1,5 +1,6 @@
-* https://pypi.org/project/langchain/
 * https://pypi.org/project/mem0ai/
+* https://pypi.org/project/llama-index/
+
 
 <div align="center">
   <a href="https://www.python.org/downloads/release/python-310">

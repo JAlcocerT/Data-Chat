@@ -18,5 +18,7 @@ df = SmartDataframe(data, config={"llm": llm})
 
 df.chat('Which are the top 5 countries by population?')
 
+
+### ./exports/charts
 # df.chat("First sort countries by population and \
 # create a bar plot of the top 5 countries")

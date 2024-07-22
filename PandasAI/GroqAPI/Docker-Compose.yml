@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  testing_service:
+    image: pandasai_groqapi
+    container_name: pandasai_groq
+    ports:
+      - "8010:8000"
+    #command: streamlit run app.py
+    command: tail -f /dev/null
+    environment:
+      - GROQ_API_KEY=sk-proj-yourapi
+
+#docker exec -it pandasai_groqapi /bin/bash
+#podman exec -it pandasai_groqapi /bin/bash
+
+# docker build -t pandasai_groqapi .
+# podman build -t pandasai_groqapi .
