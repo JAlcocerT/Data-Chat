@@ -1,4 +1,4 @@
-FROM python:3.10.14-slim
+FROM python:3.10.12
 # https://hub.docker.com/_/python
 
 # LABEL org.opencontainers.image.source https://github.com/JAlcocerT/Streamlit-MultiChat

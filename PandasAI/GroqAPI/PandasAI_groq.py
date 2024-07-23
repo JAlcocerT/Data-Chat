@@ -8,7 +8,8 @@ from pandasai import SmartDataframe
 load_dotenv(override=True)
 
 
-data = pd.read_csv("population.csv")
+#data = pd.read_csv("population.csv")
+data = pd.read_csv("https://github.com/TirendazAcademy/PandasAI-Tutorials/blob/main/Datasets/population.csv")
 data.head()
 
 

@@ -1,6 +1,6 @@
 pandasai==2.0 #https://pypi.org/project/pandasai/2.0/
 langchain-groq==0.0.1 #https://pypi.org/project/langchain/0.1.9/
-pandas
+#pandas
 
 #streamlit
 

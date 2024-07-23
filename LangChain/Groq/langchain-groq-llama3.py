@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 
 ## export GROQ_API_KEY="sk-..." #linux
-## $Env:GROQ_API_KEY = "sk-..." #PS
+## export OPENAI_API_KEY="sk-..." #PS
 
 #https://python.langchain.com/v0.2/docs/concepts/#chat-models
 chat = ChatGroq(

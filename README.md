@@ -18,5 +18,5 @@
 
 * PandasAI with 
     * GroqAPI
-    * OpenAI
+    * OpenAI ✔️
     * SQLite DB
