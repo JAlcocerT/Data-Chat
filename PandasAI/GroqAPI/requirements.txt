@@ -1,5 +1,10 @@
 pandasai==2.0 #https://pypi.org/project/pandasai/2.0/
 langchain-groq==0.0.1 #https://pypi.org/project/langchain/0.1.9/
+numpy==1.25.2
+pandas==1.5.3
+PyYAML==6.0.1
+polars==0.20.2
+
 #pandas
 
 #streamlit

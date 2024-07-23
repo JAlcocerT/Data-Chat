@@ -28,5 +28,24 @@ EXPOSE 8000
 # Run the Streamlit app
 #CMD ["streamlit", "run", "app.py"]
 
-# docker build -t pandasai_groqapi .
-# podman build -t pandasai_groqapi .
+# docker build -t py_test_pandasai_groqapi .
+# podman build -t py_test_pandasai_groqapi .
+
+
+#docker exec -it py_3_10_paigroq /bin/bash
+#podman exec -it py_3_10_paigroq /bin/bash
+
+# export GROQ_API_KEY=""
+# export GROQ_API_KEY=""
+
+# version: '3.8'
+
+# services:
+#   my_python_dev_container:
+#     image: py_test_pandasai_groqapi #python:3.10
+#     container_name: py_3_10_paigroq
+#     ports:
+#       - "8701:8501"
+#     working_dir: /app
+#     #command: python3 app.py
+#     command: tail -f /dev/null #keep it running

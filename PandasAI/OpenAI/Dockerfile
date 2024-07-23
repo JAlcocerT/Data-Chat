@@ -39,8 +39,8 @@ EXPOSE 8501
 #docker exec -it py_3_10 /bin/bash
 #podman exec -it py_3_10 /bin/bash
 
-export GROQ_API_KEY=
-export GROQ_API_KEY=
+# export GROQ_API_KEY=""
+# export GROQ_API_KEY=""
 
 # version: '3.8'
 
