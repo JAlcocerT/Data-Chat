@@ -1,5 +1,6 @@
 import os
 import csv
+
 from openai import OpenAI
 from mem0 import Memory
 from llama_index.llms.anthropic import Anthropic
@@ -23,7 +24,7 @@ class RealEstateAssistant:
         # self.load_flat_examples('flat_examples.csv')
 
         # Set up Llama Index with Anthropic
-        llm = Anthropic(temperature=0.0, model='claude-3-opus-20240229')
+        llm = Anthropic(temperature=0.0,model='claude-3-5-sonnet-20240620') #claude-3-opus-20240229 #claude-3-5-sonnet-20240620
         embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5") #Embedding model will be downloaded during the first use
         Settings.llm = llm
         Settings.embed_model = embed_model
