@@ -8,8 +8,8 @@ services:
       - "8009:8000"
     command: tail -f /dev/null ##command: streamlit run app.py
     environment:
-      - OPENAI_API_KEY=sk-proj-yourapi
-      - ANTHROPIC_API_KEY=sk-ant-api03-yourapi
+      - OPENAI_API_KEY=sk-proj-yourapi #without quotes here
+      - ANTHROPIC_API_KEY=sk-ant-api03-yourapi #without quotes here
 
-#docker exec -it properties_chat /bin/bash
-#podman exec -it properties_chat /bin/bash
+#docker exec -it Chat_with_Properties /bin/bash
+#podman exec -it Chat_with_Properties /bin/bash

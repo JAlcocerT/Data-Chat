@@ -24,7 +24,7 @@ class RealEstateAssistant:
 
         # Set up Llama Index with Anthropic
         llm = Anthropic(temperature=0.0, model='claude-3-opus-20240229')
-        embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5")
+        embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5") #Embedding model will be downloaded during the first use
         Settings.llm = llm
         Settings.embed_model = embed_model
         Settings.chunk_size = 512
@@ -81,6 +81,7 @@ user_id = "user_123"
 ai_assistant = RealEstateAssistant()
 
 def main():
+    print("Welcome to our Real Estate Assistant! Give me few ideas of what you are looking for and let it find a perfect property for you")
     while True:
         question = input("Question: ")
         if question.lower() in ['q', 'exit']:
