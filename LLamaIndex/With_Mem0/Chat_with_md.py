@@ -1,6 +1,5 @@
 import os
 import csv
-
 from openai import OpenAI
 from mem0 import Memory
 from llama_index.llms.anthropic import Anthropic
@@ -14,23 +13,21 @@ from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 class RealEstateAssistant:
     def __init__(self):
         self.client = OpenAI()
-        self.memory = Memory() #using mem0 here
-        self.messages = [{"role": "system", "content": "You are a Real Estate Agent that will make \
-                          relevant follow-up questions to the user to provide the best housing option.\
-                           When you see a match in the given amenities, you can comment on them."}]
+        self.memory = Memory()
+        self.messages = [{"role": "system", "content": "You are a Real Estate Agent that will make relevant follow-up questions to the user to provide the best housing option. When you see a match in the given amenities, you can comment on them."}]
         self.follow_up_count = 0
 
         # Load flat examples from CSV and add to memory
         # self.load_flat_examples('flat_examples.csv')
 
         # Set up Llama Index with Anthropic
-        llm = Anthropic(temperature=0.0,model='claude-3-5-sonnet-20240620') #claude-3-opus-20240229 #claude-3-5-sonnet-20240620
-        embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5") #Embedding model will be downloaded during the first use
+        llm = Anthropic(temperature=0.0, model='claude-3-5-sonnet-20240620') #claude-3-5-sonnet-20240620 #claude-3-opus-20240229
+        embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-base-en-v1.5")
         Settings.llm = llm
         Settings.embed_model = embed_model
         Settings.chunk_size = 512
 
-        # Load documents and create the index (as per the given .md in the folder)
+        # Load documents and create the index
         documents = SimpleDirectoryReader("./datamd").load_data()
         self.index = VectorStoreIndex.from_documents(documents)
 
@@ -42,9 +39,9 @@ class RealEstateAssistant:
             prompt = f"User input: {question}\nPrevious memories: {previous_memories}"
         self.messages.append({"role": "user", "content": prompt})
 
-        # Generate response using GPT-4 (OpenAI)
+        # Generate response using GPT-4
         response = self.client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=self.messages
         )
         answer = response.choices[0].message.content
@@ -76,13 +73,11 @@ class RealEstateAssistant:
         self.follow_up_count = 0  # Reset follow-up count after query
         return response
 
-### Usage example
-
+# Usage example
 user_id = "user_123"
 ai_assistant = RealEstateAssistant()
 
 def main():
-    print("Welcome to our Real Estate Assistant! Give me few ideas of what you are looking for and let it find a perfect property for you")
     while True:
         question = input("Question: ")
         if question.lower() in ['q', 'exit']:

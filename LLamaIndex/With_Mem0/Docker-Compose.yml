@@ -2,14 +2,15 @@ version: '3.8'
 
 services:
   testing_service:
-    image: properties_chat
-    container_name: Chat_with_Properties
+    image: ghcr.io/jalcocert/data-chat:properties #langchain_mem0 
+    container_name: properties
     ports:
       - "8009:8000"
-    command: tail -f /dev/null ##command: streamlit run app.py
+    #command: streamlit run app.py
+    command: tail -f /dev/null
     environment:
-      - OPENAI_API_KEY=sk-proj-yourapi #without quotes here
-      - ANTHROPIC_API_KEY=sk-ant-api03-yourapi #without quotes here
+      - OPENAI_API_KEY=sk-proj-yourapi
+      - ANTHROPIC_API_KEY=sk-ant-api03-yourapi
 
-#docker exec -it Chat_with_Properties /bin/bash
-#podman exec -it Chat_with_Properties /bin/bash
+#docker exec -it properties /bin/bash
+#podman exec -it properties /bin/bash
