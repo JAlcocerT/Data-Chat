@@ -4,14 +4,15 @@
 
 * LLamaIndex
     * With OpenAI ✔️
-    * With Groq
+    * With Groq ✔️
+    * With Anthropic ✔️
     * With Mem0 ✔️
         * With OpenAI and Anthropic API
         * HF Embedding Model - https://huggingface.co/BAAI/bge-base-en-v1.5
         * Takes context from a `.md` file at `./datamd`
 
 * LangChain
-    * Groq
+    * Groq 
     * OpenAI
     * qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
     * ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/
