@@ -34,3 +34,13 @@ jobs:
         platforms: linux/amd64,linux/arm64
         tags: |
           ghcr.io/jalcocert/data-chat:properties
+
+    - name: Build and push Docker image of LangChain
+      uses: docker/build-push-action@v2
+      with:
+        context: ./LangChain
+        push: true
+        platforms: linux/amd64,linux/arm64
+        tags: |
+          ghcr.io/jalcocert/data-chat:properties
+          

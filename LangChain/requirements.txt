@@ -1,0 +1,6 @@
+langchain==0.2.11
+#pandas==2.2.2
+#numpy==1.26.4
+langchain-anthropic==0.1.20 
+langchain-openai==0.1.17
+langchain-groq==0.1.6 #https://pypi.org/project/langchain-groq/0.1.6/
