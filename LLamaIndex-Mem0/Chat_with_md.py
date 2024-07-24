@@ -13,8 +13,10 @@ from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 class RealEstateAssistant:
     def __init__(self):
         self.client = OpenAI()
-        self.memory = Memory()
-        self.messages = [{"role": "system", "content": "You are a Real Estate Agent that will make relevant follow-up questions to the user to provide the best housing option. When you see a match in the given amenities, you can comment on them."}]
+        self.memory = Memory() #using mem0 here
+        self.messages = [{"role": "system", "content": "You are a Real Estate Agent that will make \
+                          relevant follow-up questions to the user to provide the best housing option.\
+                           When you see a match in the given amenities, you can comment on them."}]
         self.follow_up_count = 0
 
         # Load flat examples from CSV and add to memory
@@ -27,7 +29,7 @@ class RealEstateAssistant:
         Settings.embed_model = embed_model
         Settings.chunk_size = 512
 
-        # Load documents and create the index
+        # Load documents and create the index (as per the given .md in the folder)
         documents = SimpleDirectoryReader("./datamd").load_data()
         self.index = VectorStoreIndex.from_documents(documents)
 
@@ -39,7 +41,7 @@ class RealEstateAssistant:
             prompt = f"User input: {question}\nPrevious memories: {previous_memories}"
         self.messages.append({"role": "user", "content": prompt})
 
-        # Generate response using GPT-4
+        # Generate response using GPT-4 (OpenAI)
         response = self.client.chat.completions.create(
             model="gpt-4",
             messages=self.messages
@@ -73,7 +75,8 @@ class RealEstateAssistant:
         self.follow_up_count = 0  # Reset follow-up count after query
         return response
 
-# Usage example
+### Usage example
+
 user_id = "user_123"
 ai_assistant = RealEstateAssistant()
 

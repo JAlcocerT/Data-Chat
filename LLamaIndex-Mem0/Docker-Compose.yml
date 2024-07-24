@@ -2,15 +2,14 @@ version: '3.8'
 
 services:
   testing_service:
-    image: langchain_mem0
-    container_name: langchain_mem0
+    image: properties_chat
+    container_name: Chat_with_Properties
     ports:
       - "8009:8000"
-    #command: streamlit run app.py
-    command: tail -f /dev/null
+    command: tail -f /dev/null ##command: streamlit run app.py
     environment:
       - OPENAI_API_KEY=sk-proj-yourapi
       - ANTHROPIC_API_KEY=sk-ant-api03-yourapi
 
-#docker exec -it langchain_mem0 /bin/bash
-#podman exec -it langchain_mem0 /bin/bash
+#docker exec -it properties_chat /bin/bash
+#podman exec -it properties_chat /bin/bash

@@ -30,3 +30,6 @@ EXPOSE 8000
 
 # docker build -t langchain_mem0 .
 # podman build -t langchain_mem0 .
+
+# docker build -t properties_chat .
+# podman build -t properties_chat .
