@@ -1,4 +1,31 @@
-# Data-Chat
+<div align="center">
+  <h1>Data-Chat</h1>
+</div>
+
+<div align="center">
+  <h3>Chat over custom data</h3>
+</div>
+
+<style>
+  a {
+    text-decoration: none; /* This removes underline from links */
+  }
+</style>
+
+<div align="center">
+  <a href="https://github.com/JAlcocerT/Streamlit-MultiChat?tab=GPL-3.0-1-ov-file" style="margin-right: 5px;">
+    <img alt="Code License" src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
+  </a>
+  <a href="https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml" style="margin-right: 5px;">
+    <img alt="GH Actions Workflow" src="https://github.com/JAlcocerT/Streamlit-MultiChat/actions/workflows/Streamlit_GHA_MultiArch.yml/badge.svg" />
+  </a>
+  <a href="https://GitHub.com/JAlcocerT/Streamlit-Multichat/graphs/commit-activity" style="margin-right: 5px;">
+    <img alt="Mantained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://www.python.org/downloads/release/python-312">
+    <img alt="Python Version" src="https://img.shields.io/badge/python-3.12-blue.svg" />
+  </a>
+</div>
 
 > Tools to chat with our Data
 
