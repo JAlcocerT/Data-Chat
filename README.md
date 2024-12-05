@@ -3,14 +3,13 @@
 </div>
 
 <div align="center">
-  <h3>Chat over custom data</h3>
+  <h3>Chat over Custom Data</h3>
 </div>
 
-<style>
-  a {
-    text-decoration: none; /* This removes underline from links */
-  }
-</style>
+
+<div align="center">
+  <h4>LangChain | LlamaIndex | PandasAI | HayStack</h3>
+</div>
 
 <div align="center">
   <a href="https://github.com/JAlcocerT/Streamlit-MultiChat?tab=GPL-3.0-1-ov-file" style="margin-right: 5px;">
@@ -27,6 +26,8 @@
   </a>
 </div>
 
+---
+
 > Tools to chat with our Data
 
 * LLamaIndex
@@ -39,7 +40,7 @@
         * HF Embedding Model - https://huggingface.co/BAAI/bge-base-en-v1.5
         * Takes context from a `.md` file at `./datamd`
 
-* LangChain
+* [LangChain](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/)
     * Groq ✔️
     * OpenAI ✔️
     * Anthropic ✔️
@@ -48,11 +49,18 @@
         * in-memory - in a python script or jupyter notebook
         * in-memory with persistance - in a script or notebook and save/load to disk
         * in a docker container - as a server running your local machine or in the cloud
+    * [ChatWithPDF Repo](https://github.com/JAlcocerT/ask-multiple-pdfs/) and Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/)
+    * [ChatWithCSV Repo](https://github.com/JAlcocerT/langchain-ask-csv) and Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-csv-with-langchain)
+    * ChatWithDB Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/) - `./LangChain/ChatWithDB`
 
-* PandasAI with 
+* [**PandasAI**](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) with 
     * GroqAPI
     * OpenAI ✔️
     * SQLite DB
+
+* [EmbedChain/Mem0](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#embedchain---mem0)
+
+* [HayStack](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#haystack-as-rag-framework)
 
 ```sh
 python -m venv properties_venv #create the venv | python3 if you are on linux
