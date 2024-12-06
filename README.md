@@ -62,14 +62,17 @@
 
 * [HayStack](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#haystack-as-rag-framework)
 
-```sh
-python -m venv properties_venv #create the venv | python3 if you are on linux
 
-properties_venv\Scripts\activate #activate venv (windows)
-source properties_venv/bin/activate #(linux)
+## Quick Venv Setup
+
+```sh
+python -m venv datachat_venv #create the venv | python3 if you are on linux
+
+datachat_venv\Scripts\activate #activate venv (windows)
+source datachat_venv/bin/activate #(linux)
 ```
 
-Set the credentials:
+Set **API credentials**:
 
 ```sh
 export GROQ_API_KEY=YOUR_API_KEY
