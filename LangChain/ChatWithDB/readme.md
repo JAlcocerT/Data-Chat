@@ -7,6 +7,10 @@
 
 Follow any of [these Python environment setup](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/#python-apps-reliability) to use the **project dependencies** reliably.
 
+For the `ipynb` vscode will ak you for the `ipykernel` module.
+
+You will need : https://platform.openai.com/api-keys
+
 <details>
   <summary>Using Python Venv...👇</summary>
   &nbsp;
