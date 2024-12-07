@@ -2,6 +2,8 @@
 
 *_venv/
 
+*.env
+
 *.sql
 *.sqlite
 *.db
