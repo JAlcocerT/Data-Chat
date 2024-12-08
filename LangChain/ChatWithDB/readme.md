@@ -83,6 +83,12 @@ Make sure to have the [Sample DB ready](https://jalcocert.github.io/JAlcocerT/ho
 python3 chatwithDB.py
 ```
 
+And for the streamlit Chat with DB version:
+
+```sh
+streamlit run st_ChatWithDB.py
+```
+
 
 <details>
   <summary>Using Conda...👇</summary>

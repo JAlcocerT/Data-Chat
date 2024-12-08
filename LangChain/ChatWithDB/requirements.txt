@@ -12,3 +12,5 @@ mysql-connector-python==8.3.0
 
 #pip install -r requirements.txt
 #pip freeze | grep langchain
+
+streamlit==1.40.2
