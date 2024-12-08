@@ -9,6 +9,8 @@ Follow any of [these Python environment setup](https://jalcocert.github.io/JAlco
 
 For the `ipynb` vscode will ak you for the `ipykernel` module.
 
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
+
 Then you will be asked to **select the Python env**.
 
 You will need : https://platform.openai.com/api-keys

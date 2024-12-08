@@ -51,7 +51,7 @@
         * in a docker container - as a server running your local machine or in the cloud
     * [ChatWithPDF Repo](https://github.com/JAlcocerT/ask-multiple-pdfs/) and Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/)
     * [ChatWithCSV Repo](https://github.com/JAlcocerT/langchain-ask-csv) and Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-csv-with-langchain)
-    * ChatWithDB Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/) - `./LangChain/ChatWithDB`
+    * ChatWithDB [Blog Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/) - `./LangChain/ChatWithDB`
 
 * [**PandasAI**](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) with 
     * GroqAPI
