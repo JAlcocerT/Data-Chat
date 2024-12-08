@@ -1,9 +1,11 @@
 name: CI/CD Build MultiArch
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
+  repository_dispatch:
+    types: [run-workflow]  # Customize this with your own event name      
 
 jobs:
   build-and-push:
@@ -43,4 +45,3 @@ jobs:
         platforms: linux/amd64,linux/arm64
         tags: |
           ghcr.io/jalcocert/data-chat:langchain
-          

@@ -1,4 +1,4 @@
-[I commented the **DB** and CSV Chat **here** →](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain)
+[I made a POST about the **DB** and CSV Chat **here** →](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain)
 
 **Thanks to AlejandroAO [YT Video](https://www.youtube.com/watch?v=9ccl1_Wu24Q) and  [article](https://alejandro-ao.com/chat-with-mysql-using-python-and-langchain/)**
 
@@ -65,6 +65,7 @@ cd ./LangChain/ChatWithDB
 pip install -r requirements.txt
 
 
+python3 chatwithDB.py
 streamlit run langchain_chat_db.py
 
 # git add .
@@ -73,6 +74,14 @@ streamlit run langchain_chat_db.py
 ```
 
 </details>
+
+
+Make sure to have the [Sample DB ready](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#database-setup) and the [API creds loaded](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#langchain-setup-to-chat-with-db) and just:
+
+
+```sh
+python3 chatwithDB.py
+```
 
 
 <details>
