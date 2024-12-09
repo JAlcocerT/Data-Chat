@@ -1,1 +1,16 @@
 langchain
+
+openai==1.56.0 #1.52.2 #https://pypi.org/project/openai/
+python-dotenv==1.0.1
+
+langchain #==0.1.7
+langchain-community #==0.0.20
+langchain-core #==0.1.23
+langchain-openai #==0.0.6
+
+mysql-connector-python==8.3.0
+
+#pip install -r requirements.txt
+#pip freeze | grep langchain
+
+streamlit==1.40.2

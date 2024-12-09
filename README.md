@@ -67,9 +67,10 @@
 ## Quick Venv Setup
 
 ```sh
-python -m venv datachat_venv #create the venv | python3 if you are on linux
+python3 -m venv datachat_venv #create the venv Linux
+#python -m venv datachat_venv #create the venv W
 
-datachat_venv\Scripts\activate #activate venv (windows)
+#datachat_venv\Scripts\activate #activate venv (windows)
 source datachat_venv/bin/activate #(linux)
 ```
 

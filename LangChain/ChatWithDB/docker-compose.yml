@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: chinook
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306" # Expose MySQL on localhost:3306
+    volumes:
+      - db_data:/var/lib/mysql # Persistent storage for database data
+      - ./init-scripts:/docker-entrypoint-initdb.d # Initialization scripts
+    command: >
+      bash -c "apt-get update && apt-get install -y wget &&
+      wget -O /docker-entrypoint-initdb.d/Chinook_MySql.sql
+      https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_MySql.sql &&
+      docker-entrypoint.sh mysqld"
+
+volumes:
+  db_data:
+
+###docker exec -it mysql_db bash
+###docker exec -it mysql_db mysql -u myuser -p chinook
+
+
+
+# version: "3.8"
+
+# services:
+#   db:
+#     image: mysql:8.0
+#     container_name: mysql_db
+#     environment:
+#       MYSQL_ROOT_PASSWORD: rootpassword
+#       MYSQL_DATABASE: mydatabase
+#       MYSQL_USER: myuser
+#       MYSQL_PASSWORD: mypassword
+#     ports:
+#       - "3306:3306" # Expose MySQL on localhost:3306
+#     volumes:
+#       - db_data:/var/lib/mysql # Persistent storage for database data
+
+#   streamlit_app:
+#     image: python:3.11-slim
+#     container_name: streamlit_app
+#     working_dir: /app
+#     volumes:
+#       - .:/app # Mount local directory to container
+#     ports:
+#       - "8501:8501" # Expose Streamlit on localhost:8501
+#     command: >
+#       bash -c "pip 
