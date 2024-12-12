@@ -1,5 +1,6 @@
 [There is a **blog post** about this topic **here** →](https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df)
 
+* Time to improve Trip-Planner
 
 ### Quick Environment Setup
 
