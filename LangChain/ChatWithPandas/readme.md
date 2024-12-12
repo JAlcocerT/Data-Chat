@@ -3,7 +3,9 @@
 
 ### Quick Environment Setup
 
-Follow any of [these Python environment setup](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/#python-apps-reliability) to use the **project dependencies** reliably.
+1. Install [Python](https://jalcocert.github.io/JAlcocerT/guide-python/#installing-python-)
+
+2. Follow any of [these Python environment setup](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/#python-apps-reliability) to use the **project dependencies** reliably.
 
 <details>
   <summary>Using Python Venv...👇</summary>
@@ -16,13 +18,14 @@ pip install langchain
 
 ```sh
 #sudo apt install python3.12-venv
-python3 -m venv langchainChatDB_venv
+python3 -m venv langchainChatPandas_venv
 #python -m venv langchainChatDB_venv
 
 #Unix
-source langchainChatDB_venv/bin/activate
+source langchainChatPandas_venv/bin/activate
 #.\langchainChatDB_venv\Scripts\activate #Windows
 
+cd ./LangChain/ChatWithPandas
 pip install -r requirements.txt
 
 
