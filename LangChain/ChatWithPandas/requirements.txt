@@ -1,15 +1,15 @@
-langchain
-
-openai
+openai==1.58.1
 #openai==1.56.0 #1.52.2 #https://pypi.org/project/openai/
 python-dotenv==1.0.1
 
-pandas
-tabulate
+pandas==2.2.3
+tabulate==0.9.0
 
 # langchain #==0.1.7
-langchain_experimental
-langchain-community #==0.0.20
+langchain==0.3.13
+langchain_experimental==0.3.4
+langchain-community==0.3.13 #==0.0.20
+
 # langchain-core #==0.1.23
 # langchain-openai #==0.0.6
 

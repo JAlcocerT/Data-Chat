@@ -1,4 +1,4 @@
-name: CI/CD Build MultiArch
+name: CI/CD Build MultiArch to GHCR
 
 on:
   # push:

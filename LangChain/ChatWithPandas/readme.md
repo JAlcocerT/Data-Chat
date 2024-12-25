@@ -1,6 +1,9 @@
 [There is a **blog post** about this topic **here** →](https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df)
 
-* Time to improve Trip-Planner
+* Time to improve **Trip-Planner**
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithPandas/test_langchain_pandasDF.ipynb)
+
 
 ### Quick Environment Setup
 
