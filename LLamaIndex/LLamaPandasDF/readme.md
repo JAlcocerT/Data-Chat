@@ -62,7 +62,7 @@ source .env
 #$env:OPENAI_API_KEY="your-api-key-here"
 echo $OPENAI_API_KEY
 
-cd ./LangChain/ChatWithDB
+cd ./LLamaIndex/LLamaPandasDF
 pip install -r requirements.txt
 
 

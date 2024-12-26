@@ -1,4 +1,8 @@
-llama-index 
-llama-index-experimental
+llama-index==0.12.8
+llama-index-experimental==0.5.2
+
+python-dotenv==1.0.1
 
 #https://docs.llamaindex.ai/en/stable/examples/query_engine/pandas_query_engine/
+
+#pip install -r requirements.txt
