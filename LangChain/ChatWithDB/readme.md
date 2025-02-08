@@ -5,6 +5,11 @@
 
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
 
+> [!IMPORTANT]
+> I have made a Tech Talk about this. Covered on [this post](https://jalcocert.github.io/JAlcocerT/langchain-chat-with-database/).
+
+---
+
 
 ### Quick Environment Setup
 
@@ -35,6 +40,7 @@ source datachat_venv/bin/activate #(linux)
 Set **API credentials**:
 
 ```sh
+#source .env
 export OPENAI_API_KEY=YOUR_API_KEY
 $env:OPENAI_API_KEY="YOUR_API_KEY"
 set OPENAI_API_KEY=YOUR_API_KEY

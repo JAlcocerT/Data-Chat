@@ -26,9 +26,14 @@
   </a>
 </div>
 
+
+> [!IMPORTANT]
+> See the related [**Container** of this repo](https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat)
+
+
 ---
 
-> Tools to chat with our Data
+> Tools to Chat with our Data
 
 * LLamaIndex
     * With OpenAI ✔️
