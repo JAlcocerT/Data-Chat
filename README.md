@@ -69,6 +69,12 @@
 * [HayStack](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#haystack-as-rag-framework)
 
 
+
+[![Tech Talk - Chat with your Databases using LLMs](https://img.youtube.com/vi/KXamTdJA-uc/0.jpg)](https://www.youtube.com/watch?v=KXamTdJA-uc)
+
+
+---
+
 ## Quick Venv Setup
 
 ```sh

@@ -1,4 +1,4 @@
-[I made a POST about the **DB** and CSV Chat **here** →](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain)
+I made a [**POST**](https://jalcocert.github.io/JAlcocerT/langchain-chat-with-database/) about the [**DB** and CSV Chat **here** →](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-a-db-with-langchain)
 
 **Thanks to AlejandroAO [YT Video](https://www.youtube.com/watch?v=9ccl1_Wu24Q) and  [article](https://alejandro-ao.com/chat-with-mysql-using-python-and-langchain/)**
 
@@ -6,7 +6,9 @@
 [![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JAlcocerT/Data-Chat/blob/main/LangChain/ChatWithDB/test_langchainChatDB.ipynb)
 
 > [!IMPORTANT]
-> I have made a Tech Talk about this. Covered on [this post](https://jalcocert.github.io/JAlcocerT/langchain-chat-with-database/).
+> I have made a [**Tech Talk**](https://wearecommunity.io/events/winter-data-meetup2025/talks/84337) about this. Covered on [this post](https://jalcocert.github.io/JAlcocerT/langchain-chat-with-database/).
+
+[![Tech Talk - Chat with your Databases using LLMs](https://img.youtube.com/vi/KXamTdJA-uc/0.jpg)](https://www.youtube.com/watch?v=KXamTdJA-uc)
 
 ---
 
