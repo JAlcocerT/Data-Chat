@@ -28,7 +28,7 @@
 
 
 > [!IMPORTANT]
-> See the related [**Container** of this repo](https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat)
+> See the related [**Data-Chat Container** of this repo](https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat)
 
 
 ---
@@ -70,7 +70,7 @@
 
 
 
-[![Tech Talk - Chat with your Databases using LLMs](https://img.youtube.com/vi/KXamTdJA-uc/0.jpg)](https://www.youtube.com/watch?v=KXamTdJA-uc)
+
 
 
 ---
