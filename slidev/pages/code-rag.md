@@ -7,7 +7,7 @@ image: https://cover.sli.dev
 
 Use code snippets and get the highlighting directly, and even types hover!
 
-<logos-openai />
+
 
 ```py {all|1-2|4-7|9-18|20-22|all} twoslash
 import os

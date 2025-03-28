@@ -54,45 +54,11 @@ Jesus Alcocer Tagua
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
----
-transition: fade-out
----
-
-# AI for Real Estate: Our Agenda
-
-* **Intro:** 🚀 AI in Real Estate & Personalized Recommendations 🎯
-* **API Calls:** 📞 Basic Matching (👍 Pros & 👎 Cons)
-* **RAG:** 🧠 Advanced Personalization & 📈 Real-Time Data
-* **Comparison:** ⚖️ API vs. RAG Use Cases
-* **Demo:** 🎬 Client Matching - API vs. RAG
-* **Conclusions**
-* **Q&A** 🗣️
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
 
 ---
 layout: two-cols
 layoutClass: gap-16
+transition: fade-out
 ---
 
 # Table of contents
@@ -110,6 +76,18 @@ layoutClass: gap-16
 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 
 ---
 src: ./pages/code-llm-api-rag.md
@@ -123,7 +101,7 @@ class: px-20
 
 # Do More with RAGs
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+RAGs can have many more use cases. From Chatting with a DB, to talk with PDF or CSV data.
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
@@ -135,14 +113,13 @@ Use RAG to chat with your DataBase
 Use RAG to chat with PDFs
 ```
 
-<img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt="">
-
+<!-- <img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt=""> -->
+<img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt="" style="width: 70%;">
 <img border="rounded" src="https://github.com/JAlcocerT/ask-multiple-pdfs/blob/main/docs/PDF-LangChain.jpg?raw=true" alt="">
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
+Read more about [RAG use cases](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data).
 
 ---
 
@@ -250,6 +227,10 @@ image: https://cover.sli.dev
 
 See an example [here](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0)
 
+<logos-claude />
+
+<logos-openai />
+
 
 ```plantuml {scale: 0.7}
 @startuml
@@ -285,6 +266,10 @@ database "MySql" {
 ```
 
 
+---
+src: ./pages/references.md
+hide: false
+---
 
 ---
 src: ./pages/thanks-qna.md
@@ -293,10 +278,7 @@ hide: false
 
 
 
----
-src: ./pages/references.md
-hide: false
----
+
 
 
 

@@ -1,3 +1,8 @@
+
+---
+layout: left
+---
+
 # References
 
 Get your **API for LLMs**: <uim-comment class="text-3xl text-red-400 mx-2" />
@@ -22,3 +27,12 @@ Get your **API for LLMs**: <uim-comment class="text-3xl text-red-400 mx-2" />
 
 
 ---
+
+
+# Conclusions
+
+<!-- <img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt=""> -->
+
+<img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/memes/features-vs-needs.png?raw=true" alt="" style="width: 50%;">
+
+https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/memes/features-vs-needs.png
