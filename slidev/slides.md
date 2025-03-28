@@ -236,27 +236,23 @@ chat_completion = client.chat.completions.create(
 class: px-20
 ---
 
-# Themes
+# Do More with RAGs
 
 Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
 ```yaml
----
-theme: default
----
+Use RAG to chat with your DataBase 
 ```
 
 ```yaml
----
-theme: seriph
----
+Use RAG to chat with PDFs
 ```
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
+<img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt="">
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
+<img border="rounded" src="https://github.com/JAlcocerT/ask-multiple-pdfs/blob/main/docs/PDF-LangChain.jpg?raw=true" alt="">
 
 </div>
 
