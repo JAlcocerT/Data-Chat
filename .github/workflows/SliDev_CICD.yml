@@ -1,8 +1,8 @@
 name: Deploy SlidevJS to Github Pages
 
 on:
-  # push:
-  #   branches: ["main"]
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -32,19 +32,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Install dependencies
-        run: |
-          cd ./realestate
-          npm install
-      # - name: Build Slidev project
+      # - name: Install dependencies
       #   run: |
-      #     cd ./slidev
-      #     npm install -g @slidev/cli
-      #     npm i -D playwright-chromium
-      #     slidev build --base /Data-Chat/ 
+      #     cd ./realestate
+      #     npm install
       - name: Build Slidev project
         run: |
-          slidev build --base /Data-Chat/       
+          cd ./slidev
+          npm install -g @slidev/cli
+          npm i -D playwright-chromium
+          slidev build --base /Data-Chat/ 
+      # - name: Build Slidev project
+      #   run: |
+      #     slidev build --base /Data-Chat/       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
