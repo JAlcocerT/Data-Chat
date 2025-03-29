@@ -5,12 +5,12 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Chat with Real Estate Data
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Slidev Data Chat
+  Using LLMs with your Data.
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Learn more at [jalcocertech.com](https://jalcocertech.com)
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -20,21 +20,32 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+fonts:
+  # basically the text
+  sans: Roboto
+  # use with `font-serif` css class from UnoCSS
+  serif: Robot Slab
+  # for code blocks, inline code, etc.
+  mono: Fira Code
 ---
 
-# Welcome to Slidev
+# RAG-Powered Real Estate Matching
 
-Presentation slides for developers
+April 4, 2025
+
+Jesus Alcocer Tagua
+
+
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+  Let's Get Started <carbon:arrow-right />
 </div>
 
 <div class="abs-br m-6 text-xl">
   <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/JAlcocerT/Data-Chat" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
@@ -43,30 +54,27 @@ Presentation slides for developers
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
+
 ---
+layout: two-cols
+layoutClass: gap-16
 transition: fade-out
 ---
 
-# What is Slidev?
+# Table of contents
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
+* **Intro:** 🚀 AI in Real Estate & Personalized Recommendations 🎯
+* **API Calls:** 📞 Basic Matching (👍 Pros & 👎 Cons)
+* **RAG:** 🧠 Advanced Personalization & 📈 Real-Time Data
+* **Comparison:** ⚖️ API vs. RAG Use Cases
+* **Demo:** 🎬 Client Matching - API vs. RAG
+* **Conclusions**
+* **Q&A** 🗣️
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+::right::
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
+<Toc text-sm minDepth="1" maxDepth="2" />
 
 <style>
 h1 {
@@ -80,117 +88,244 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
 ---
-transition: slide-up
-level: 2
+layout: image-right
+image: RE-bot-ppt.jpeg
 ---
 
-# Navigation
+# The Goal
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+Creating a Real Estate Agent to propose the best solution to property seekers.
 
-## Keyboard Shortcuts
+<!-- ![](/RE-bot-ppt.jpeg){width=300px lazy} -->
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+<div v-click>
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+While understanding:
+
+1. How to provide context to LLMs via API calls
+
+</div>
+
+<div v-click>
+
+2. How to setup a RAG as Real Estate Agent
+
+</div>
+
+<br>
+
+<v-click>
+
+By the end of the, we will have a recap with  <span v-mark.red="3"><code>Pros and </code>Cons</span>
+of each approach.
+
+<span v-mark.circle.orange="4">Code and Demo</span>
+, will also be shared.
+
+</v-click>
+
+<div mt-20 v-click>
+
+[See the Code](https://github.com/JAlcocerT/Data-Chat/tree/main/Z_DeployMe)
+
+</div>
+
+
+
 
 ---
-layout: two-cols
-layoutClass: gap-16
+src: ./pages/code-llm-api-rag.md
+hide: false
 ---
 
-# Table of contents
 
-You can use the `Toc` component to generate a table of contents for your slides:
+---
+class: px-20
+---
 
-```html
-<Toc minDepth="1" maxDepth="1" />
+# Do More with RAGs
+
+RAGs can have many more use cases. From Chatting with a DB, to talk with PDF or CSV data.
+
+<div grid="~ cols-2 gap-2" m="t-2">
+
+```yaml
+Use RAG to chat with your DataBase 
 ```
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+```yaml
+Use RAG to chat with PDFs
+```
 
-::right::
+<!-- <img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt=""> -->
+<img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt="" style="width: 70%;">
+<img border="rounded" src="https://github.com/JAlcocerT/ask-multiple-pdfs/blob/main/docs/PDF-LangChain.jpg?raw=true" alt="">
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+</div>
+
+Read more about [RAG use cases](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data).
+
+---
+
+# Clicks Animations
+
+You can add `v-click` to elements to add a click animation.
+
+<div v-click>
+
+This shows up when you click the slide:
+
+```html
+<div v-click>This shows up when you click the slide.</div>
+```
+
+</div>
+
+<br>
+
+<v-click>
+
+The <span v-mark.red="3"><code>v-mark</code> directive</span>
+also allows you to add
+<span v-mark.circle.orange="4">inline marks</span>
+, powered by [Rough Notation](https://roughnotation.com/):
+
+```html
+<span v-mark.underline.orange>inline markers</span>
+```
+
+</v-click>
+
+<div mt-20 v-click>
+
+[Learn more](https://sli.dev/guide/animations#click-animation)
+
+</div>
+
+
+
+---
+
+# Diagrams
+
+You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+
+<div class="grid grid-cols-2 gap-1 pt-10 -mb-10">
+
+
+```mermaid {theme: 'neutral', scale: 0.4}
+graph TD
+    C[Load .env, Get API Key];
+    C --> D[Initialize OpenAI Client];
+    D --> E[System Message];
+    E --> F[User Message];
+    F --> G[OpenAI API Call - Chat Completion Response];
+```
+
+```mermaid {scale: 0.4}
+mindmap
+  root((RAG Workflow))
+    Data Ingestion
+      Documents Source
+        SimpleDirectoryReader("./datamd")
+      Document Loading
+    Indexing
+      Embedding Model
+        HuggingFaceEmbedding("BAAI/bge-base-en-v1.5")
+      Vector Store Index
+        VectorStoreIndex.from_documents(documents)
+    User Interaction
+      User Query
+        "Question: ..."
+      Memory Storage
+        Memory.add(question, user_id=user_id)
+      Memory Retrieval
+        Memory.search(query, user_id=user_id)
+    Query Processing
+      Contextualization
+        Combine user query with memory
+      Query Engine
+        index.as_query_engine(similarity_top_k=3)
+      Property Retrieval
+        Query vector store index
+    Response Generation
+      LLM (Anthropic)
+        claude-3-5-sonnet-20240620
+      Generate Answer
+        Based on retrieved properties and context
+      Output
+        "Answer: ..."
+```
+
+</div>
+
+Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: RE-bot.jpeg
 ---
 
-# Code
+# Implementing a RAG
 
-Use code snippets and get the highlighting directly, and even types hover!
+See an example [here](https://github.com/JAlcocerT/Data-Chat/tree/main/LLamaIndex/With_Mem0)
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
+<logos-claude />
 
-import { computed, ref } from 'vue'
+<logos-openai />
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
 
-doubled.value = 2
+```plantuml {scale: 0.7}
+@startuml
+
+package "Some Group" {
+  HTTP - [First Component]
+  [Another Component]
+}
+
+node "Other Groups" {
+  FTP - [Second Component]
+  [First Component] --> FTP
+}
+
+cloud {
+  [Example 1]
+}
+
+database "MySql" {
+  folder "This is my folder" {
+    [Folder 3]
+  }
+  frame "Foo" {
+    [Frame 4]
+  }
+}
+
+[Another Component] --> [Example 1]
+[Example 1] --> [Folder 3]
+[Folder 3] --> [Frame 4]
+
+@enduml
 ```
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
 
 ---
-layout: center
-class: text-center
+src: ./pages/references.md
+hide: false
 ---
 
-# Learn More
+---
+src: ./pages/thanks-qna.md
+hide: false
+---
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
 
-<PoweredBySlidev mt-10 />
+
+
+
+
+
+
+<!-- <PoweredBySlidev mt-10 /> -->
