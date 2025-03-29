@@ -1,4 +1,4 @@
-name: Deploy SlidevJS to Github Pages
+name: SlidevJS to GH Pages
 
 on:
   push:
@@ -14,42 +14,38 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NODE_VERSION: 18
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+
+      - name: Setup Node.js 18
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-      # - name: Install dependencies
-      #   run: |
-      #     cd ./realestate
-      #     npm install
+          node-version: 18
+          cache: "npm"
+          cache-dependency-path: realestate/package-lock.json
+
+      - name: Install dependencies
+        run: |
+          cd realestate
+          npm ci
+          npm install -g @slidev/cli
+          npm install playwright-chromium --save-dev
+
       - name: Build Slidev project
         run: |
-          cd ./realestate
-          npm install
-          npm install -g @slidev/cli
-          npm i -D playwright-chromium
+          cd realestate
           slidev build --base /Data-Chat/
-      # - name: Build Slidev project
-      #   run: |
-      #     slidev build --base /Data-Chat/       
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./realestate/dist
+          path: realestate/dist
 
   deploy:
     environment:
