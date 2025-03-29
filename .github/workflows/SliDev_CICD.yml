@@ -38,7 +38,8 @@ jobs:
       #     npm install
       - name: Build Slidev project
         run: |
-          cd ./slidev
+          cd ./realestate
+          npm install
           npm install -g @slidev/cli
           npm i -D playwright-chromium
           slidev build --base /Data-Chat/ 
