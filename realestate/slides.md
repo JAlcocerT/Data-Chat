@@ -90,8 +90,12 @@ h1 {
 
 ---
 layout: image-right
-image: RE-bot-ppt.jpeg
+image: https://github.com/JAlcocerT/Data-Chat/blob/main/realestate/RE-bot-ppt.jpeg?raw=true
 ---
+
+<!-- 
+#image: RE-bot-ppt.jpeg
+ -->
 
 # The Goal
 
@@ -265,8 +269,12 @@ Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML D
 
 ---
 layout: image-right
-image: RE-bot.jpeg
+image: https://github.com/JAlcocerT/Data-Chat/blob/main/realestate/RE-bot.jpeg?raw=true
 ---
+<!-- 
+image: RE-bot.jpeg 
+-->
+
 
 # Implementing a RAG
 
