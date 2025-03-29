@@ -34,7 +34,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Install dependencies
         run: |
-          cd ./slidev
+          cd ./realestate
           npm install
       # - name: Build Slidev project
       #   run: |
@@ -48,7 +48,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./slidev/dist
+          path: ./realestate/dist
 
   deploy:
     environment:
