@@ -6,6 +6,19 @@ from llama_index.llms.anthropic import Anthropic
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader
 
+#import os 
+#from openai import OpenAI
+
+#import os
+from dotenv import load_dotenv
+#from openai import OpenAI
+# Load environment variables
+load_dotenv()
+
+# Get API keys and other environment variables
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+ANTHROPIC_API_KEY = os.environ['ANTHROPIC_API_KEY']
+
 # Set the API keys
 # os.environ['OPENAI_API_KEY'] = 'sk-proj-yourapi'
 # os.environ['ANTHROPIC_API_KEY'] = 'sk-ant-yourapi'

@@ -1,0 +1,20 @@
+#pandas==2.2.1 #2.0.3 #https://pypi.org/project/pandas/
+
+streamlit #https://pypi.org/project/streamlit/
+streamlit-authenticator==0.1.5 #https://pypi.org/project/streamlit-authenticator/
+
+python-dotenv==1.0.1
+
+mem0ai==0.0.9
+
+llama-index==0.10.56
+llama-index-llms-anthropic==0.1.15
+llama-index-embeddings-huggingface==0.2.2
+
+#https://community.openai.com/t/error-with-openai-1-56-0-client-init-got-an-unexpected-keyword-argument-proxies/1040332/2
+httpx==0.27.2 #https://pypi.org/project/httpx/0.27.2/ 
+
+
+
+#pip install -r requirements.txt
+#pip install -r ./Docker/requirements.txt
