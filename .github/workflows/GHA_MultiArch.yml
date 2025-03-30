@@ -1,9 +1,9 @@
 name: CI/CD Build MultiArch to GHCR
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
   repository_dispatch:
     types: [run-workflow]  # Build the container on demand
 
@@ -26,7 +26,11 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}
-        password: ${{ secrets.CICD_TOKEN_DataChat }}
+        password: ${{ secrets.CICD_TOKEN_RealEstate }}      
+      # with:
+      #   registry: ghcr.io
+      #   username: {{ github.actor }}
+      #   password: {{ secrets.CICD_TOKEN_DataChat }}
 
     # - name: Build and push Docker image of LLamaIndex with Mem0 #real estate
     #   uses: docker/build-push-action@v2

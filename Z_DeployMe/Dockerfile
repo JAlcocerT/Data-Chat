@@ -1,9 +1,9 @@
-FROM python:3.10.12-slim  
+FROM python:3.10.12
 #https://hub.docker.com/_/python
 
 LABEL org.opencontainers.image.source https://github.com/JAlcocerT/Data-Chat
 LABEL maintainer="Jesus Alcocer Tagua"
-LABEL org.opencontainers.image.description="Talk with YOur Data with Python and LLMs"
+LABEL org.opencontainers.image.description="Talk with Your Data with Python and LLMs"
 LABEL org.opencontainers.image.licenses=GPL-3.0
 
 # Copy local code to the container image.
@@ -21,10 +21,6 @@ COPY . ./
 
 # Install production dependencies.
 RUN pip install -r requirements.txt
-
-# For Scrapegraph
-# RUN playwright install-deps \
-#     && playwright install
 
 EXPOSE 8501
 
