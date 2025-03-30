@@ -1,30 +1,11 @@
-# Demo - Real Estate Agents
-
-You can split your slides.md into multiple files and organize them as you want using the `src` attribute.
-
-#### `slides.md`
-
-```markdown
-# Demo Time
-
-Page 2 from main entry.
-
+---
+layout: center
+class: text-center
 ---
 
-## src: ./subpage.md
-```
+# Demo - Real Estate Agents
 
-<br>
-
-#### `subpage.md`
-
-```markdown
-# Conclusions
-
-Page 2 from another file.
-```
-
-[Learn more](https://sli.dev/guide/syntax.html#importing-slides)
+Demo Time!
 
 ---
 layout: center
@@ -33,8 +14,6 @@ class: text-center
 
 
 # QnA
-
-
 
 <uim-github />
 
@@ -49,11 +28,11 @@ Learn More about Real Estate Powered RAG
 
 [Youtube](https://www.youtube.com/@JAlcocerTech) · [GitHub](https://github.com/JAlcocerT/Data-Chat) · [Tech Blog Post](https://jalcocert.github.io/JAlcocerT/streamlit-is-cool/)
 
-<uim-youtube class="text-3xl text-red-400 mx-2" />
+<!-- <uim-youtube class="text-3xl text-red-400 mx-2" />
 
 <a href="https://www.youtube.com/@JAlcocerTech">
   <uim-youtube class="text-3xl text-red-400 mx-2" />
-</a>
+</a> -->
 
 <!-- <logos-claude />
 

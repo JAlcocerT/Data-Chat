@@ -13,6 +13,7 @@ Learn more about Slidev at the [documentation](https://sli.dev/).
 ---
 
 ```sh
+cd ./realestate
 #npm install -g @slidev/cli #install slidev globally
 npm init slidev #yarn create slidev
 
