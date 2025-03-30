@@ -1,24 +1,24 @@
 #https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat
 
-version: '3'
+#version: '3'
 
 services:
-  streamlit-multichat:
-    image: ghcr.io/jalcocert/streamlit-multichat #:v1.1
-    container_name: streamlit_multichat
+  realestate-datachat:
+    image: ghcr.io/jalcocert/data-chat:realestate
+    container_name: streamlit_realestate
     volumes:
       - ai_streamlit_multichat:/app
     working_dir: /app
-    command: /bin/sh -c "\
-      streamlit run RealEstate.py"
-    #command: tail -f /dev/null 
+    #command: /bin/sh -c "\
+    #  streamlit run RealEstate.py"
+    command: tail -f /dev/null 
     ports:
       - "8501:8501"
     restart: always
     environment:
       MODEL_API_KEY: sk-proj-openaiAPIhere
       ANTHROPIC_API_KEY: sk-ant-yourkey
-      RAG_MODE: False
+      RAG_MODE: "FALSE"
       MODEL: gpt-4o-mini
       TEMPERATURE: 0 #dont be creative :)  
       DATA_DIRECTORY: "./SampleProperties/properties.md"

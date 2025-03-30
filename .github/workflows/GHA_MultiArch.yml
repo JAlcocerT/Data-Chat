@@ -1,9 +1,9 @@
 name: CI/CD Build MultiArch to GHCR
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   repository_dispatch:
     types: [run-workflow]  # Build the container on demand
 
