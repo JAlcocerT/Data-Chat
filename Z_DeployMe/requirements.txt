@@ -1,6 +1,6 @@
-pandas==2.2.1 #2.0.3 #https://pypi.org/project/pandas/
+#pandas==2.2.1 #2.0.3 #https://pypi.org/project/pandas/
 
-streamlit==1.44.0 #https://pypi.org/project/streamlit/
+streamlit #https://pypi.org/project/streamlit/
 streamlit-authenticator==0.1.5 #https://pypi.org/project/streamlit-authenticator/
 
 python-dotenv==1.0.1

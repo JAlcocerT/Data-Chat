@@ -2,21 +2,17 @@
 #USING OPENAI API AS LLM#
 ########################
 
-import os
 import streamlit as st
 #from UDF_GenAI import read_markdown_files
 
-
-
-import streamlit as st
-import os 
 from openai import OpenAI
 
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+import logging
 # Load environment variables
 load_dotenv()
+
 
 # Get API keys and other environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -33,7 +29,7 @@ SYSTEM_CONTENT_OpenAI = os.getenv("SYSTEM_CONTENT", """You are a Real Estate Age
 def st_openai_md_genai():
 
     st.header("Explore our Properties 🏠")
-    st.subheader("Talk with our Real Estate Agent")
+    st.subheader("Talk with our Real Estate Agent (API)")
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -88,10 +84,6 @@ def st_openai_md_genai():
                 st.session_state.messages.append({"role": "assistant", "content": "Could not load markdown files."})
                 message_placeholder.markdown("Could not load markdown files.")
 
-import os
-
-import logging
-import os
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

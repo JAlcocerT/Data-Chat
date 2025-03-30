@@ -15,6 +15,7 @@
 ```sh
 git clone 
 cd Z_DeployMe
+#DOCKER_BUILDKIT=1 docker build --build-arg BUILDKIT_INLINE_CACHE=1 --build-arg DNS_SERVERS="8.8.8.8 8.8.4.4" -t your_image_name .
 sudo docker-compose up -d
 ```
 
@@ -50,6 +51,9 @@ pip list
 #pip freeze > requirements.txt #generate a txt with the ones you have!
 ```
 
+
+Read the keys and configs: 
+
 ```sh
 source .env
 
@@ -60,5 +64,6 @@ echo $OPENAI_API_KEY
 ```
 
 ```sh
-streamlit run RealEstate.py
+#streamlit run RealEstate.py
+streamlit run RealEstate.py --server.fileWatcherType none
 ```

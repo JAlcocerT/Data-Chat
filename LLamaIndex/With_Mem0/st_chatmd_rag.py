@@ -1,11 +1,3 @@
-##########################################
-#using LLAMAINDEX with OpenAI and Claude##
-#########################################
-
-
-# def re_calculator_md_rag():
-#     1+1
-
 import os
 import streamlit as st
 from openai import OpenAI
@@ -21,7 +13,7 @@ load_dotenv()
 # Get API keys and other environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-DATA_DIRECTORY = os.getenv("DATA_DIRECTORY", "./properties.md")
+DATA_DIRECTORY = os.getenv("DATA_DIRECTORY", "./datamd")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
 OPENAI_TEMPERATURE = float(os.getenv("OPENAI_TEMPERATURE", 0.0))
 
@@ -91,7 +83,7 @@ class RealEstateAssistant:
         self.follow_up_count = 0  # Reset follow-up count after query
         return response
 
-def re_calculator_md_rag():
+def st_openai_md_genai():
     st.header("Explore our Properties 🏠")
     st.subheader("Talk with our Real Estate Agent - RAG version")
 
