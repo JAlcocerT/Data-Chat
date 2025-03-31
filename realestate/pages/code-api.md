@@ -7,8 +7,6 @@ image: https://cover.sli.dev
 
 Use code snippets and get the highlighting directly, and even types hover!
 
-
-
 ```py {all|1-2|4-7|9-18|20-22|all} twoslash
 import os
 from openai import OpenAI
@@ -22,7 +20,7 @@ chat_completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "What it is Python?",
+            "content": "Can you recommend me properties to buy near the Sea?",
         }
     ],
     model="gpt-4o-mini",
