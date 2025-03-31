@@ -9,6 +9,39 @@
 * https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data
 * https://jalcocert.github.io/JAlcocerT/streamlit-is-cool/
 
+**Sample Questions:**
+
+1. Who are you and what can you do?
+2. What property can you recommend me in europe with 300k budget?
+3. 
+
+
+---
+
+```sh
+#python -m venv mortage_venv #create the venv
+python3 -m venv mortagegenai_venv #create the venv
+
+#mortage_venv\Scripts\activate #activate venv (windows)
+source mortagegenai_venv/bin/activate #(linux)
+```
+
+**Install dependencies** with:
+
+```sh
+#pip install beautifulsoup4 openpyxl pandas numpy==2.0.0
+#pip install -r ./Docker/requirements.txt #all at once
+pip install -r ./requirements.txt #all at once, it will take ~2/3min
+
+#pip freeze | grep langchain
+
+#pip show beautifulsoup4
+pip list
+#pip freeze > requirements.txt #generate a txt with the ones you have!
+```
+
+
+---
 
 ```sh
 python3 Chat_with_md.py

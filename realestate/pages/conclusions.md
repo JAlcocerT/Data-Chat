@@ -1,7 +1,3 @@
-
----
-
-
 # Wrapping Up
 
 <!-- <img border="rounded" src="https://github.com/JAlcocerT/JAlcocerT/blob/main/static/blog_img/GenAI/dbchat/langchain-AI.jpeg?raw=true" alt=""> -->
