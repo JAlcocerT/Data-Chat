@@ -11,9 +11,13 @@
 
 **Sample Questions:**
 
-1. Who are you and what can you do?
-2. What property can you recommend me in europe with 300k budget?
-3. 
+1. I want a property in the south of europe
+2. What property can you recommend me within 1M budget?
+3. I would prefer to have the property near the sea
+
+<!-- https://www.youtube.com/watch?v=cEfqonasQ0M -->
+
+[![Tech Talk - Chat with your Databases using LLMs](https://img.youtube.com/vi/cEfqonasQ0M/0.jpg)](https://www.youtube.com/watch?v=cEfqonasQ0M)
 
 
 ---
@@ -45,7 +49,7 @@ pip list
 
 ```sh
 python3 Chat_with_md.py
-streamlit run st_chatmd_rag.py --server.fileWatcherType none
+#streamlit run st_chatmd_rag.py --server.fileWatcherType none
 ```
 
 

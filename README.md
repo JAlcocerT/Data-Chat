@@ -35,7 +35,10 @@
 
 > Tools to Chat with our Data
 
-* LLamaIndex
+[![Star History Chart](https://api.star-history.com/svg?repos=run-llama/llama_index,langchain-ai/langchain,Sinaptik-AI/pandas-ai&,type=Date)](https://star-history.com/#run-llama/llama_index/caddy-docker-proxy&langchain-ai/langchain&Sinaptik-AI/pandas-ai&Date)
+
+
+* [LLamaIndex](https://jalcocert.github.io/JAlcocerT/using-langchain-with-pandas-df/)
     * With OpenAI ✔️
     * With Groq ✔️
     * With Anthropic ✔️
