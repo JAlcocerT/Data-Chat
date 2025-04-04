@@ -2,6 +2,12 @@
 
 ---
 
+**Sample Questions:**
+
+1. I want a property in the south of europe
+2. What property can you recommend me within 1M budget?
+3. I would prefer to have the property near the sea
+
 **Keys:**
 
 * https://console.anthropic.com/workbench/
@@ -9,8 +15,6 @@
 * https://platform.openai.com/api-keys
 
 **Deploy as Container**
-
-
 
 ```sh
 git clone 

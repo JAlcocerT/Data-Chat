@@ -48,7 +48,7 @@ pip list
 ---
 
 ```sh
-python3 Chat_with_md.py
+python3 Chat_with_md.py #run this one to see the Real Estate RAG via CLI
 #streamlit run st_chatmd_rag.py --server.fileWatcherType none
 ```
 
