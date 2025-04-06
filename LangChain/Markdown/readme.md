@@ -2,8 +2,16 @@
 
 **Commented it** [here](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#exploring-langchain)
 
+
+```sh
+#wc -w ./data/books/alice_in_wonderland.md #~20k words context
+python3 create_database.py
+python3 query_data.py "How does Alice meet the Mad Hatter?"
+```
+
 ---
 
+**Venv setup:**
 
 ```sh
 sudo apt install python3-pip
@@ -30,7 +38,7 @@ pip install -r requirements.txt #all at once
 
 #pip show beautifulsoup4
 pip list
-#pip freeze > requirements.txt #generate a txt with the ones you have!
+#pip freeze > requirements-snapshot.txt #generate a txt with the ones you have!
 ```
 
 ```sh
@@ -40,4 +48,11 @@ source .env
 #set OPENAI_API_KEY=your-api-key-here
 #$env:OPENAI_API_KEY="your-api-key-here"
 echo $OPENAI_API_KEY
+```
+
+
+```sh
+pip3 install unstructured[md]
+#pip show markdown
+#3.7
 ```
