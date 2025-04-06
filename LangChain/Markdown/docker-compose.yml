@@ -1,0 +1,66 @@
+#version: '3'
+
+services:
+  realestate-datachat:
+    image: st_datachat_langchainmd
+    container_name: st_datachat_langchainmd #docker exec -it st_datachat_langchainmd /bin/bash
+    volumes:
+      - ai_st_datachat_langchainmd:/app
+    working_dir: /app
+    command: tail -f /dev/null
+    ports:
+      - "8501:8501"
+    restart: always
+    environment:
+      MODEL_API_KEY: sk-proj-openaiAPIhere
+    networks:
+      - my_network
+
+  chroma-db:
+    image: chromadb/chroma:latest #https://github.com/JAlcocerT/Docker/tree/main/AI_Gen/Z_VectorDBs/ChromaDB
+    container_name: chroma-db #sudo docker logs chroma-db
+    ports:
+      - "8000:8000"
+    restart: always
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  ai_st_datachat_langchainmd:
+
+# #version: '3'
+
+# services:
+#   realestate-datachat:
+#     image: st_datachat_langchainmd
+#     container_name: st_datachat_langchainmd
+#     volumes:
+#       - ai_st_datachat_langchainmd:/app
+#     working_dir: /app
+#     #command: /bin/sh -c "\
+#     #  streamlit run RealEstate.py"
+#     command: tail -f /dev/null 
+#     ports:
+#       - "8501:8501"
+#     restart: always
+#     environment:
+#       MODEL_API_KEY: sk-proj-openaiAPIhere
+#     # networks:
+#     #   - cloudflare_tunnel
+#       # - nginx_default   
+#     #restart: always   
+
+# # networks:
+# #   cloudflare_tunnel:
+# #     external: true
+#   # nginx_default:
+#   #   external: true
+
+# volumes:
+#   ai_st_datachat_langchainmd:
+
+# #docker exec -it st_datachat_langchainmd /bin/bash 

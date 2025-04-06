@@ -7,6 +7,25 @@
 #wc -w ./data/books/alice_in_wonderland.md #~20k words context
 python3 create_database.py
 python3 query_data.py "How does Alice meet the Mad Hatter?"
+#docker build -t st_datachat_langchainmd .
+#sudo docker image ls
+#sudo docker compose -d
+```
+
+or alternatively:
+
+```sh
+docker run -d \
+--name st_datachat_langchainmd \
+--volume ai_st_datachat_langchainmd:/app \
+--workdir /app \
+--publish 8505:8501 \
+--restart always \
+--env MODEL_API_KEY=sk-proj-openaiAPIhere \
+st_datachat_langchainmd \
+tail -f /dev/null
+
+#docker exec -it st_datachat_langchainmd /bin/bash
 ```
 
 ---
@@ -23,10 +42,10 @@ sudo apt install python3.10-venv
 
 ```sh
 #python -m venv solvingerror_venv #create the venv
-python3 -m venv solvingerror_venv #create the venv
+python3 -m venv langchainmd_venv #create the venv
 
 #solvingerror_venv\Scripts\activate #activate venv (windows)
-source solvingerror_venv/bin/activate #(linux)
+source langchainmd_venv/bin/activate #(linux)
 ```
 
 **Install dependencies** with:
