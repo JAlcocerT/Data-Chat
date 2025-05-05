@@ -45,15 +45,17 @@
     * With Mem0 ✔️
         * With OpenAI and Anthropic API
         * HF Embedding Model - https://huggingface.co/BAAI/bge-base-en-v1.5
-        * Takes context from a `.md` file at `./datamd`
+        * Takes * [EmbedChain/Mem0](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#embedchain---mem0)
+ from a `.md` file at `./datamd`
+
 
 * [LangChain](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/)
     * Groq ✔️
     * OpenAI ✔️
     * Anthropic ✔️
-    * qdrant - https://fossengineer.com/selfhosting-vector-admin-docker/
-    * ChromaDB -  https://fossengineer.com/selfhosting-chromadb-docker/
-        * in-memory - in a python script or jupyter notebook
+    * [qdrant](https://fossengineer.com/selfhosting-vector-admin-docker/)
+    * [ChromaDB](https://fossengineer.com/selfhosting-chromadb-docker/)
+        * [in-memory](https://github.com/JAlcocerT/Data-Chat/blob/main/LangChain/web/langchain-chroma-repo-readme.ipynb) - in a python script or jupyter notebook ✔️
         * in-memory with persistance - in a script or notebook and save/load to disk
         * in a docker container - as a server running your local machine or in the cloud
     * [ChatWithPDF Repo](https://github.com/JAlcocerT/ask-multiple-pdfs/) and Blog [Post](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-pdfs/)
@@ -63,15 +65,11 @@
 
 * [**PandasAI**](https://jalcocert.github.io/JAlcocerT/how-to-use-pandasAI/) with 
     * GroqAPI
-    * OpenAI ✔️
+    * OpenAI
     * SQLite DB
 
-* [EmbedChain/Mem0](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#embedchain---mem0)
 
 * [HayStack](https://jalcocert.github.io/JAlcocerT/how-to-use-rags-with-python/#haystack-as-rag-framework)
-
-
-
 
 
 
@@ -88,6 +86,11 @@ source datachat_venv/bin/activate #(linux)
 ```
 
 Set **API credentials**:
+
+* OpenAI API Keys - <https://platform.openai.com/api-keys>
+* Anthropic - <https://console.anthropic.com/settings/keys>
+* Groq - <https://console.groq.com/keys>
+* For [Ollama](https://github.com/JAlcocerT/Docker/tree/main/AI_Gen/Ollama), you need [this setup](https://fossengineer.com/selfhosting-llms-ollama/)
 
 ```sh
 export GROQ_API_KEY=YOUR_API_KEY

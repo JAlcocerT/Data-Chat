@@ -31,3 +31,7 @@ https://studio.youtube.com/video/e9hJZrT7HLw/edit -->
 * https://github.com/JAlcocerT/langchain-ask-csv
 
 [Blog **here** →](https://jalcocert.github.io/JAlcocerT/how-to-chat-with-your-data/#chat-with-csv-with-langchain) 
+
+## Chat with Web Content
+
+https://github.com/JAlcocerT/Data-Chat/tree/main/LangChain/web

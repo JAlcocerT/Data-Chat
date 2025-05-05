@@ -116,11 +116,13 @@ if __name__ == "__main__":
     embedding_model = "all-minilm"
     llm_model = "llama-3.1-8b-instant"
     #user_question = "what it is this offer about?"
-    user_question = "what it is this repository about?"
+    #user_question = "what it is this repository about?"
+    user_question = "what are the technologies and langugages used on this project?"
     #target_website = "https://justjoin.it/job-offer/link-group-product-manager-warszawa-ai"
     target_website = "https://github.com/JAlcocerT/Streamlit-MultiChat"
     #content_area_class = "MuiBox-root css-rcazos" # Use the same class as in the example
-    content_area_class = "markdown-body entry-content container-lg"
+    #content_area_class = "markdown-body entry-content container-lg"
+    content_area_class = "BorderGrid about-margin"
     
     answer = get_response_from_website_with_chunks(
         ollama_url,

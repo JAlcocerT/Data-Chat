@@ -16,7 +16,7 @@ python3 ./LangChain/web/langchain-scrap-joboffer-ollama.py #fully local
 * OpenAI API Keys - <https://platform.openai.com/api-keys>
 * Anthropic - <https://console.anthropic.com/settings/keys>
 * Groq - <https://console.groq.com/keys>
-* For Ollama, you need [this setup](https://fossengineer.com/selfhosting-llms-ollama/)
+* For [Ollama](https://github.com/JAlcocerT/Docker/tree/main/AI_Gen/Ollama), you need [this setup](https://fossengineer.com/selfhosting-llms-ollama/)
 
 **Example:**
 

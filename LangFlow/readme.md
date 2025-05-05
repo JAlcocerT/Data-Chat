@@ -14,3 +14,7 @@ docker run -it --rm -p 7860:7860 langflowai/langflow:latest
 #docker exec -it  	langflow-my_python_dev_container-1 /bin/bash
 #podman exec -it py_3_10_12 /bin/bash
 ```
+
+
+> [!IMPORTANT]
+> Related to RAG, but not RAG itself
