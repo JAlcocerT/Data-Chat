@@ -1,0 +1,8 @@
+langchain-community==0.3.21
+beautifulsoup4
+requests
+
+langchain-chroma==0.2.3
+langchain_openai==0.3.16
+langchain-ollama==0.3.2
+#pip install -r requirements.txt #all at once

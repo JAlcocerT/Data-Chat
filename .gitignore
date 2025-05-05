@@ -2,6 +2,7 @@
 chroma/
 
 *_venv/
+.venv/
 
 *.env
 
