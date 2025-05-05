@@ -3,15 +3,25 @@
 
 Thanks to: https://www.youtube.com/watch?v=0zgYu_9WF7A
 
+Try them with: 
 
 ```sh
 source .venv/bin/activate #(linux)
 
-python3 ./LangChain/web/langchain-joboffer.py
+python3 ./LangChain/web/langchain-scrap-joboffer-ollama.py #fully local
+#python3 ./LangChain/web/langchain-scrap-repo-openai.py ##partially local
+#python3 ./LangChain/web/langchain-scrap-repo-groq.py #partially local
 ```
 
-Question: what it is this offer about?
-Answer: Based on the job offer context and the provided Zadania (duties), I would guess that this is an opportunity for a Data Analyst or Business Intelligence Analyst position in the data analytics space.
+* OpenAI API Keys - <https://platform.openai.com/api-keys>
+* Anthropic - <https://console.anthropic.com/settings/keys>
+* Groq - <https://console.groq.com/keys>
+* For Ollama, you need [this setup](https://fossengineer.com/selfhosting-llms-ollama/)
+
+**Example:**
+
+* Question: what it is this offer about?
+* Answer: Based on the job offer context and the provided Zadania (duties), I would guess that this is an opportunity for a Data Analyst or Business Intelligence Analyst position in the data analytics space.
 
 The specific tasks mentioned, such as:
 

@@ -1,8 +1,14 @@
+### LANGCHAIN + CHROMA + OLLAMA (chromadb + embedding + llm) ###
+#https://python.langchain.com/api_reference/ollama/index.html
+
 import bs4
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import OllamaEmbeddings
+
+#from langchain_community.embeddings import OllamaEmbeddings
 from langchain_chroma import Chroma
+from langchain_ollama import OllamaEmbeddings
+
 from langchain_ollama.llms import OllamaLLM
 #from langchain.chains import RetrievalQA
 
@@ -63,7 +69,7 @@ def get_response_from_website_with_chunks(
 
         # Step 5: Generating Responses with a Language Model
         llm = OllamaLLM(base_url=ollama_base_url, model=llm_model_name)
-        response = llm.invoke(f"""Answer the question according to the job offer context given. Reply in English and try to guess for which position it is in the Data Analytics Space. Justify your answer.
+        response = llm.invoke(f"""Answer the question according to the job offer context given. Reply in English and try to guess the most out of the Project. Justify your answer.
                    Question: {question}.
                    Context: {context}
         """)
@@ -78,10 +84,13 @@ if __name__ == "__main__":
     ollama_url = "http://192.168.1.5:11434"  # Replace with your Ollama server URL if different
     embedding_model = "all-minilm"
     llm_model = "llama3.2:1b"
-    user_question = "what it is this offer about?"
-    target_website = "https://justjoin.it/job-offer/link-group-product-manager-warszawa-ai"
-    content_area_class = "MuiBox-root css-rcazos" # Use the same class as in the example
-
+    #user_question = "what it is this offer about?"
+    user_question = "what it is this repository about?"
+    #target_website = "https://justjoin.it/job-offer/link-group-product-manager-warszawa-ai"
+    target_website = "https://github.com/JAlcocerT/Streamlit-MultiChat"
+    #content_area_class = "MuiBox-root css-rcazos" # Use the same class as in the example
+    content_area_class = "markdown-body entry-content container-lg"
+    
     answer = get_response_from_website_with_chunks(
         ollama_url,
         embedding_model,
