@@ -26,6 +26,7 @@
   </a>
 </div>
 
+Used this repository to conduct a tech-talk around a sample *real estate RAG* as per `./realestate` slidev powered presentation, deployed publically via github pages [here](https://jalcocert.github.io/Data-Chat/).
 
 > [!IMPORTANT]
 > See the related [**Data-Chat Container** of this repo](https://github.com/JAlcocerT/Data-Chat/pkgs/container/data-chat)

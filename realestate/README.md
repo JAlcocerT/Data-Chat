@@ -25,7 +25,11 @@ npm install @iconify-json/uim #https://icon-sets.iconify.design/uim/?icon-filter
 npm install @iconify-json/logos
 ```
 
+Or create via GHA CI/CD as done with the multichat [here](https://github.com/JAlcocerT/Streamlit-MultiChat/blob/main/.github/workflows/SliDev_CICD.yml#L39C1-L48C30).
+
 ```sh
+#npm install
 #npm run build #this is mapped to: slidev build, but wont accept the subroute for github pages
-slidev build
+#slidev build
+slidev build --base /Data-Chat/ 
 ```

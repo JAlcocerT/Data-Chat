@@ -20,6 +20,8 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+# base path for GitHub Pages deployment
+#base: /Data-Chat/
 fonts:
   # basically the text
   sans: Roboto
